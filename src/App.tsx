@@ -4,6 +4,7 @@ import Navbar from "./components/navbar";
 import Home from "./pages/Home";
 import Benefits from "./pages/benefits";
 import Footer from "./components/footer";
+import OurClasses from "./pages/ourClasses";
 const App = () => {
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
@@ -28,6 +29,7 @@ const App = () => {
       />
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
+      <OurClasses setSelectedPage={setSelectedPage}/>
       <Footer/>
     </div>
   );
