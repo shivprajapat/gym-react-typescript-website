@@ -18,4 +18,10 @@ body,
     .flex-space {
         @apply flex items-center justify-between;
     }
+    .input-field{
+        @apply mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white outline-none
+    }
+     .primary-btn{
+        @apply mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white
+    }
 }
