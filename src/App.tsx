@@ -3,6 +3,7 @@ import { SelectedPage } from "@/shared/types";
 import Navbar from "./components/navbar";
 import Home from "./pages/Home";
 import Benefits from "./pages/benefits";
+import Footer from "./components/footer";
 const App = () => {
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
@@ -27,6 +28,7 @@ const App = () => {
       />
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
+      <Footer/>
     </div>
   );
 };
